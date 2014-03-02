@@ -1,0 +1,6 @@
+name: WCPlatform
+main: com.github.lyokofirelyte.WCPlatform.WCPlatform
+prefix: WCP
+author: lyokofirelyte
+depend: [WCAPI]
+version: 1
