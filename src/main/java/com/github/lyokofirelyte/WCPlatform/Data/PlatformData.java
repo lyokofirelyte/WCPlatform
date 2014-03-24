@@ -1,16 +1,12 @@
 package com.github.lyokofirelyte.WCPlatform.Data;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.configuration.file.YamlConfiguration;
 
-import com.github.lyokofirelyte.WCPlatform.PlatformCommand;
 import com.github.lyokofirelyte.WCPlatform.WCPlatform;
 import com.github.lyokofirelyte.WCPlatform.Rounds.PlatformRound;
 import com.github.lyokofirelyte.WCPlatform.Rounds.Round;
@@ -23,7 +19,6 @@ public class PlatformData {
 		main = i;
 	}
 	
-	public List<Class<?>> commandClasses = new ArrayList<Class<?>>(Arrays.asList(PlatformCommand.class));
 	public Map<Integer, PlatformRound> rounds = new HashMap<Integer, PlatformRound>();
 	public Map<String, PlatformPlayer> players = new HashMap<String, PlatformPlayer>();
 	public Map<String, Long> delays = new HashMap<String, Long>();
@@ -43,9 +38,6 @@ public class PlatformData {
 		return rounds.get(Integer.parseInt(a.toString()));
 	}
 	
-	public List<Class<?>> getCommandClasses(){
-		return commandClasses;
-	}
 	
 	public Map<String, PlatformPlayer> getPlayers(){
 		return players;

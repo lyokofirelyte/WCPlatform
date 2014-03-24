@@ -62,7 +62,7 @@ public class WCPlatform extends WCNode {
 	public void reg(){
 		
 		pm.registerEvents(new PlatformEventHandler(this), this);
-		api.reg.registerCommands(data.getCommandClasses(), this);
+		api.reg.registerCommands(new PlatformCommand(this));
 		
 		List<PlatformRound> rounds = Arrays.asList(new PR0(this), new PR1(this), new PR2(this), new PR3(this), new PR4(this), new PR5(this), new PR6(this), new PR7(this), new PR8(this), new PR9(this), new PR10(this));
 		int x = 0;
